@@ -1,0 +1,301 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .contenedor {
+            padding: 60px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .titulo{
+            color: rgb(160, 10, 60);
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 60px;
+
+        }
+
+        /*header*/
+
+        header {
+            width: 100%;
+            height: 500px;
+            background-image: url(https://phantom-elmundo.unidadeditorial.es/c2e17ad03c10190925608e4bc62e7745/resize/1200/f/jpg/assets/multimedia/imagenes/2021/09/20/16321284993130.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+
+        }
+
+        nav {
+            text-align: center;
+            padding: 30px 50px 0 0;
+        }
+
+        header nav a {
+            display:inline-block;
+            color: #110e0edc; 
+            text-decoration: none;
+            padding: 10px 20px;
+            line-height: normal;
+            font-size: 20px;
+            -webkit-transition:all 500ms ease;
+            -o-transition:all 500ms ease;
+            transition:all 500ms ease;
+            
+        }
+        
+        header nav a:hover{
+            background:#ffc4dc;
+            border-radius: 50px;
+        
+        
+        }
+
+        header .textos-header{
+            display: flex;
+            height: 400px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .textos-header h1{
+            font-size: 50px;
+            color:rgb(39, 39, 38);
+        }   
+        
+        .textos-header h2{
+            font-size: 30px;
+            font-family: 300;
+            color:rgb(39, 39, 38);
+        }   
+
+        .contenedor-sobre-nosotros {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(248, 231, 239);
+            height: 70%;
+            
+            
+
+        }
+
+        .imagen-about-us{
+           
+            width: 29%;
+            height: 19%;
+            margin: 10px;
+            padding-top: 10px;
+            
+        } 
+
+
+        .sobre-nosotros .contenido-textos {
+            width: 48%;
+            
+        }
+        .contenido-textos h3{
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .contenido-textos h3 span{
+            background-color: rgb(160, 10, 60);
+            color: black;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            padding: 2px;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .contenido-textos p{
+            padding: 0px 8px 30px 15px;
+            font-weight: 100px;
+            text-align: justify;
+
+        }    
+        
+        /*portafolio*/
+
+        .portafolio {
+            background-color:  rgb(248, 231, 239);
+
+        }
+
+        .galeria-port{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }      
+        
+
+        .imagen-port {
+            width: 23%;
+            margin-bottom: 15px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+        }  
+
+        .imagen-port > img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+            object-fit: cover;
+            display: block;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+        }   
+
+        .hover-galeria {
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           top: 0;
+           transform: scale(1);
+           background: rgba(184, 38, 87, 0.509);
+           transition: transform .5s;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+        }   
+
+        .hover-galeria img {
+            width: 50px;
+
+        }        
+        .hover-galeria p{
+            color: rgb(21, 18, 14);
+
+        }       
+        .imagen-port:hover .hover-galeria {
+            transform: scale(0);
+
+        }       
+
+
+    /*informacion*/
+        .about-services {
+            background-color: #ffc4dc;
+            padding-bottom: 30px;
+            width: 100%;
+        }
+    .servicio-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .servicio-ind{
+        width: 40%;
+        text-align: center;
+        background-color: antiquewhite;
+        
+
+    }
+    .servicio-ind img{
+        width: 95%;
+        padding-top: 10px;
+    }
+
+    .servicio-ind .h3 {
+        margin: 10px 0;
+    }    
+    
+    .servicio-ind li{
+        font-weight: 300px;
+        text-align: justify;
+        padding: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 18px; color: rgb(160, 10, 60) ;
+        
+        
+    } 
+
+    /*representantes*/
+
+    .clientes-contenedor {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        justify-content: space-evenly;
+        background-image: url(https://phantom-elmundo.unidadeditorial.es/c2e17ad03c10190925608e4bc62e7745/resize/1200/f/jpg/assets/multimedia/imagenes/2021/09/20/16321284993130.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    /*footer*/
+   
+    footer{
+            background-color: rgb(149, 236, 244);
+            padding: 60px 0 30px 0;
+            margin:auto;
+            overflow: hidden;
+       }
+
+    .contenedor-footer{
+            display: flex;
+            margin: auto;
+            padding-bottom: 50px;
+            width: 90%;
+            justify-content: space-evenly;
+            border-bottom: 1px solid rgb(248, 188, 67);
+        }
+    .content-foo{
+        text-align: center;
+    }
+    .content-foo p{
+        color: rgb(82, 81, 82);S;
+    }
+    .content-foo h4{
+        color: rgb(82, 81, 82);
+        border-bottom: 3px solid rgb(248, 188, 67);
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    .final {
+        order: 2; /*distribucion de jerarquias primero va order 1 y luego 2 y antes que 3*/
+        display: flex;
+        flex-direction: row; /*fila horizontal*/
+        gap: 5px; /*espacio entre elementos*/
+        align-content: center;
+        margin-left: 590px;
+        margin-top: 20px;
+    
+      }
+
+      .final p{
+        color: rgb(82, 81, 82);
+        font-family: 'Courier New', Courier, monospace; font-weight: 300px;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      .redes-sociales img {
+        align-items: center;
+      }
+      

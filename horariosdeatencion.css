@@ -1,0 +1,20 @@
+/*boostrap*/
+
+.container {
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body {
+    background-image: url(https://phantom-elmundo.unidadeditorial.es/c2e17ad03c10190925608e4bc62e7745/resize/1200/f/jpg/assets/multimedia/imagenes/2021/09/20/16321284993130.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
